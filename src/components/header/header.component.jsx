@@ -1,6 +1,6 @@
 import React from  'react'
 import { Link } from 'react-router-dom';
-import {ReactComponent as Logo} from '../../assets/icon.jpg'
+import {ReactComponent as Logo} from '../../assets/icon.svg'
 import './header.style.scss'
 
 const Header = () => (
@@ -12,5 +12,9 @@ const Header = () => (
             <Link to="/shop">Shop</Link>
         </div>
     </div>
-)
+);
+
+const mapsStateToProps = () => {
+    currentUser: state
+}
 export default Header;
